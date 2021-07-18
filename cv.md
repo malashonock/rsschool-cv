@@ -22,7 +22,7 @@ In search of the best fit to purpose, I've tried .NET WinForms -> then had a swi
 
 * IFRS, management accounting, financial modelling
 * MS Excel, VBA, Power Query (M), Power Pivot (DAX)
-* .NET Framework, WinForms (basic knowledge)
+* C#, .NET Framework, WinForms (basic knowledge)
 * ASP.NET Core, Blazor (basic knowledge)
 * Angular, TypeScript (currently studying)
 
