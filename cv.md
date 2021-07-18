@@ -1,6 +1,6 @@
 # Yan Malashonak (@malashonock)
 
-Email: <malashonock@gmail.com>
+Email: <malashonock@gmail.com>  
 Mobile: +375 (29) 826-16-20
 
 ---
@@ -21,7 +21,7 @@ In search of the best fit to purpose, I've tried .NET WinForms -> then had a swi
 ## Professional skills
 
 * IFRS, management accounting, financial modelling
-* MS Excel, VBA, Power Queary (M), Power Pivot (DAX)
+* MS Excel, VBA, Power Query (M), Power Pivot (DAX)
 * .NET Framework, WinForms (basic knowledge)
 * ASP.NET Core, Blazor (basic knowledge)
 * Angular, TypeScript (currently studying)
