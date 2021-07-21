@@ -3,6 +3,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 14px;
 }
 
 .container {
@@ -20,6 +22,8 @@ aside {
 .content {
     flex: 9;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-container {
@@ -29,3 +33,19 @@ aside {
     justify-content: space-around;
     padding: 10px;
 }
+
+h1 {
+    margin-bottom: 0px;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
