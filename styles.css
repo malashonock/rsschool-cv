@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+}
+
+aside {
+    flex: 175px;
+    background-color: midnightblue;
+    color: white;
+    padding: 10px;
+}
+
+.content {
+    flex: 9;
+    padding: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
