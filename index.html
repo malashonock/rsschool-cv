@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>CV: Yan Malashonak</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -12,49 +15,66 @@
                 <img id="photo" src="yan-malashonak-min.jpg" alt="yan-malashonak-photo">
             </div>
     
-            <section id="contacts">
-                <p>Email: malashonock@gmail.com</p>
-                <p>Phone: +375 (29) 826-16-20</p>
-            </section>
+            <div id="contacts">
+                <h2>Contacts</h2>
+
+                <section>
+                    <h3 class="highlight">Location:</h3>
+                    <p>Belarus, Minsk</p>
+                </section>
     
-            <section id="skills">
-                <p>Professional skills:</p>
-                <ul>
-                    <li>IFRS, management accounting, financial modelling</li>
-                    <li>MS Excel, VBA, Power Query (M), Power Pivot (DAX)</li>
-                    <li>C#, .NET Framework, WinForms (basic knowledge)</li>
-                    <li>ASP.NET Core, Blazor (basic knowledge)</li>
-                    <li>Angular, TypeScript (currently studying)</li>
-                    <li>English: C1 (Advanced), tested by EPAM's online training center</li>
-                </ul>
-            </section>
+                <section>
+                    <h3 class="highlight">Email:</h3>
+                    <p>malashonock@gmail.com</p>
+                </section>
+    
+                <section>
+                    <h3 class="highlight">Phone:</h3>
+                    <p>+375 (29) 826-16-20</p>
+                </section>
+    
+                <section>
+                    <h3 class="highlight">Skype:</h3>
+                    <p>yan.malashonak</p>
+                </section>
+            </div>
+
         </aside>
     
         <div class="content">
             <header>
-                <h1>Yan Malashonak</h1>
-                <strong>Student Frontend Development</strong>
+                <h1 class="highlight">Yan Malashonak</h1>
+                <p><strong>Student Frontend Development</strong></p>
             </header>
         
             <article>
+                <section id="intro">
+                    <h2>Self-intro</h2>
+                    <p>I've already proved myself as professional in Finance, but am no longer interested in further growth in that domain. 
+                    Working in Finance, I've discovered that developing a solution from tech viewpoint attracts me more than dealing with methodology. 
+                    What really drives me now is web apps development.</p>
+                </section>
+
+                <hr>
+
                 <section id="experience">
-                    <p>Work experience:</p>
+                    <h2>Work experience:</h2>
                     <table>
                         <tbody>
                             <tr>
-                                <td>2014 - now</td>
+                                <td class="first-col"><b>2014 &mdash; present</b></td>
                                 <td>
                                     Project Leader at 
                                     <a href="https://fin.by/en" target="_blank" rel="noopener noreferrer">FIN.by</a></td>
                             </tr>
                             <tr>
-                                <td>2011 - 2014</td>
+                                <td class="first-col"><b>2011 &mdash; 2014</b></td>
                                 <td>
                                     IFRS Consultant at 
                                     <a href="https://fin.by/en" target="_blank" rel="noopener noreferrer">FIN.by</a></td>
                             </tr>
                             <tr>
-                                <td>Jan 2011</td>
+                                <td class="first-col"><b>January 2011</b></td>
                                 <td>
                                     Software Testing Intern at 
                                     <a href="https://www.epam.com/" target="_blank" rel="noopener noreferrer">EPAM</a>
@@ -63,33 +83,49 @@
                         </tbody>
                     </table>
                 </section>
+
+                <hr>
                 
                 <section id="education">
-                    <p>Education:</p>
+                    <h2>Education:</h2>
                     <table>
                         <tbody>
                             <tr>
-                                <td>2021</td>
+                                <td class="first-col"><b>2021</b></td>
                                 <td>Training programme in Management "Business-Spetsnaz" (by S.A.Shein)</td>
                             </tr>
                             <tr>
-                                <td>2015 - 2017</td>
+                                <td class="first-col"><b>2015 &mdash; 2017</b></td>
                                 <td>ACCA Qualification, currently ACCA member</td>
                             </tr>
                             <tr>
-                                <td>Dec 2015</td>
+                                <td class="first-col"><b>December 2015</b></td>
                                 <td>DipIFR (Rus)</td>
                             </tr>
                             <tr>
-                                <td>2011</td>
+                                <td class="first-col"><b>2011</b></td>
                                 <td>Training programme in Finance @ Atlant-M (by A.Babuk)</td>
                             </tr>
                             <tr>
-                                <td>2007 - 2012</td>
+                                <td class="first-col"><b>2007 &mdash; 2012</b></td>
                                 <td>Undergraduate in Finance & Banking @ BSEU</td>
                             </tr>
                         </tbody>
                     </table>
+                </section>
+
+                <hr>
+
+                <section id="skills">
+                    <h2>Professional skills:</h2>
+                    <ul>
+                        <li>IFRS, management accounting, financial modelling</li>
+                        <li>MS Excel, VBA, Power Query (M), Power Pivot (DAX)</li>
+                        <li>C#, .NET Framework, WinForms (basic knowledge)</li>
+                        <li>ASP.NET Core, Blazor (basic knowledge)</li>
+                        <li>Angular, TypeScript (currently studying)</li>
+                        <li>English: C1 (Advanced), tested by EPAM's online training center</li>
+                    </ul>
                 </section>
             </article>
         
@@ -99,7 +135,7 @@
                         Github: 
                         <a href="https://github.com/malashonock" target="_blank" rel="noopener noreferrer">@malashonock</a>
                     </div>
-                    <div>2021</div>
+
                     <div>
                         <a href="https://rs.school/js/">
                             <img src="https://rs.school/images/rs_school_js.svg" 
@@ -107,6 +143,8 @@
                                 width="100">
                         </a>
                     </div>
+                    
+                    <div>2021</div>
                 </address>
             </footer>
         </div>
