@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>CV: Yan Malashonak</title>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="default.min.css">
+    <script src="highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 <body>
     <div class="container">
@@ -18,30 +23,29 @@
             <div id="contacts">
                 <h2 class="highlight">Contacts</h2>
 
-                <section>
-                    <h3>Location:</h3>
-                    <p>Belarus, Minsk</p>
-                </section>
-    
-                <section>
-                    <h3>Email:</h3>
-                    <p>malashonock@gmail.com</p>
-                </section>
-    
-                <section>
-                    <h3>Phone:</h3>
-                    <p>+375 (29) 826-16-20</p>
-                </section>
-    
-                <section>
-                    <h3>Skype:</h3>
-                    <p>yan.malashonak</p>
-                </section>
+                <ul>
+                    <li>
+                        <h3>Location:</h3>
+                        <p>Belarus, Minsk</p>
+                    </li>
+                    <li>
+                        <h3>Email:</h3>
+                        <p>malashonock@gmail.com</p>
+                    </li>   
+                    <li>
+                        <h3>Phone:</h3>
+                        <p>+375 (29) 826-16-20</p>
+                    </li>
+                    <li>
+                        <h3>Skype:</h3>
+                        <p>yan.malashonak</p>
+                    </li>
+                </ul>
             </div>
 
         </aside>
     
-        <div class="content">
+        <main class="content">
             <header>
                 <h1>Yan Malashonak</h1>
                 <p><strong>Student Frontend Development</strong></p>
@@ -127,6 +131,30 @@
                         <li>English: C1 (Advanced), tested by EPAM's online training center</li>
                     </ul>
                 </article>
+
+                <hr>
+
+                <article id="code-samples">
+                    <h2 class="highlight">Code samples:</h2>
+                    <p>My solution to 
+                        <i><a href="https://www.codewars.com/kata/517abf86da9663f1d2000003" target="_blank" rel="noopener noreferrer">
+                            &laquo;Convert string to camel case&raquo;
+                        </a></i> kata on Codewars:</p>
+<pre><code>function toCamelCase(str) {
+    let words = str.split(/[_-]/);
+    let output = "";        
+    for (i = 0; i < words.length; i++) {
+        let word = words[i];
+        if (i == 0) {
+        output += word; // leave 1st word unchanged
+        } else {
+        output += word.charAt(0).toUpperCase()
+            + word.slice(1);
+        }
+    }        
+    return output;
+}</code></pre>
+                </article>
             </div>
         
             <footer>
@@ -147,7 +175,7 @@
                     <div>2021</div>
                 </address>
             </footer>
-        </div>
+        </main>
     </div>
 </body>
 </html>
