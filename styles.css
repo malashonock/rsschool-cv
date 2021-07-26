@@ -18,6 +18,8 @@ body {
 }
 
 .container {
+    width: auto;
+    margin: auto;
     flex: 1;
     display: flex;
 }
