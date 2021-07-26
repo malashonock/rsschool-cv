@@ -28,7 +28,7 @@ aside {
 }
 
 .content {
-    flex: 11;    
+    flex: 35;    
     padding: 10px;
     display: flex;
     flex-direction: column;
