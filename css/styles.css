@@ -143,11 +143,17 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-left: 0;
     }
 
     #contacts > ul > li {
         flex: 1 1 50%;
         min-width: 220px;
+    }
+    
+    #contacts > ul > li:before {
+        display: none;
+        margin-left: 0;
     }
 
     li h3,p {
