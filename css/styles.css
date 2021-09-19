@@ -32,8 +32,7 @@ aside {
     flex-direction: column;
 }
 
-aside > .wrapper {
-    margin: 10px;
+aside > .header {
     display: flex;
     flex-direction: column;
 }
@@ -72,6 +71,7 @@ h2 {
 }
 
 h3 {
+    margin-block-start: 10px;
     margin-bottom: 5px;
 }
 
@@ -106,17 +106,33 @@ footer {
     padding-top: 20px;
 }
 
-@media (max-width: 720px) and (orientation: portrait) {
+@media (max-width: 640px) and (orientation: portrait) {
     .container {
         flex-direction: column;
     }
 
     aside {
+        padding-bottom: 0;
+    }
+
+    .content {
+        padding-top: 0;
+    }
+
+    aside > .header {
         flex-direction: row;
     }
 
-    .small-width {
+    hr.small-width {
         display: block;
+        width: 100%;
+    }
+
+    header.small-width {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .large-width {
@@ -124,13 +140,33 @@ footer {
     }
 
     #contacts > ul {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    #contacts > ul > li {
+        flex: 1 1 50%;
+        min-width: 220px;
+    }
+
+    li h3,p {
+        display: inline-block;
+    }
+
+    h3 {
+        margin-block-start: 0;
     }
 }
 
-@media (max-width: 480px) {
-    aside {
+@media (max-width: 380px) {
+    aside > .header {
         flex-direction: column;
+        align-items: center;
+    }
+
+    aside > .header * {
+        margin-left: 0;
+        text-align: center;
     }
 }
