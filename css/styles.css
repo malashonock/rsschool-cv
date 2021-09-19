@@ -93,6 +93,10 @@ ul > li:before {
     margin-left: -1em;
 }
 
+td {
+    vertical-align: top;
+}
+
 td.first-col {
     min-width: 120px;
 }
