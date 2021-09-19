@@ -21,8 +21,31 @@ body {
     max-width: 720px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container {
+    flex: 1 1 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-text {
+    flex: 1 1 600px;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
 }
 
 aside {
@@ -32,13 +55,7 @@ aside {
     flex-direction: column;
 }
 
-aside > .wrapper {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
+main {
     flex: 1 1 600px;    
     padding: 10px;
     min-width: 300px;
@@ -46,21 +63,12 @@ aside > .wrapper {
     flex-direction: column;
 }
 
-.image-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
+
 
 #photo {
     margin: 0 5px;
     border-radius: 50%;
     border: 3px solid white;
-}
-
-.small-width {
-    display: none;
 }
 
 h1 {
@@ -113,14 +121,6 @@ footer {
 
     aside {
         flex-direction: row;
-    }
-
-    .small-width {
-        display: block;
-    }
-
-    .large-width {
-        display: none;
     }
 
     #contacts > ul {
