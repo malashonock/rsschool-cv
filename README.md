@@ -1,3 +1,2 @@
-# rsschool-cv
+https://malashonock.github.io/rsschool-cv
 
-Reference to CV: <https://malashonock.github.io/rsschool-cv/>
