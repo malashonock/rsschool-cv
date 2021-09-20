@@ -22,8 +22,13 @@ body {
     max-width: 67.5rem;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
 }
 
 aside {
@@ -33,7 +38,7 @@ aside {
     flex-direction: column;
 }
 
-aside > .header {
+#title {
     display: flex;
     flex-direction: column;
 }
@@ -46,7 +51,7 @@ aside > .header {
     flex-direction: column;
 }
 
-.image-container {
+.photo-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,7 +64,7 @@ aside > .header {
     border: 3px solid white;
 }
 
-.small-width {
+.credentials.small-width {
     display: none;
 }
 
@@ -108,11 +113,15 @@ td.first-col {
 }
 
 footer {
-    padding-top: 1.25rem;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 48rem) {
-    .container {
+    main {
         flex-direction: column;
     }
 
@@ -124,7 +133,7 @@ footer {
         padding-top: 0;
     }
 
-    aside > .header {
+    #title {
         flex-direction: row;
     }
 
@@ -133,14 +142,14 @@ footer {
         width: 100%;
     }
 
-    header.small-width {
+    .credentials.small-width {
         margin-left: 0.7rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .large-width {
+    .credentials.large-width {
         display: none;
     }
 
@@ -171,19 +180,13 @@ footer {
 }
 
 @media (max-width: 23.75rem) {
-    aside > .header {
+    #title {
         flex-direction: column;
         align-items: center;
     }
 
-    aside > .header * {
+    #title * {
         margin-left: 0;
         text-align: center;
     }
-}
-
-@media (orientation: portrait) {
-    :root {
-        
-    }    
 }
