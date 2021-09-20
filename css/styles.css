@@ -33,7 +33,19 @@ body {
     position: fixed;
 }
 
-.navbar > ul {
+.navbar a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.burger-menu {
+    line-height: 1.5rem;
+    padding: 0 0.5rem;
+    display: none;
+}
+
+.navlinks {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -50,12 +62,6 @@ body {
 .navlink:hover > a {
     background-color: white;
     color: var(--highlight-color);
-}
-
-.navlink > a {
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
 }
 
 .navlink:before {
@@ -158,6 +164,18 @@ footer {
 }
 
 @media (max-width: 48rem) {
+    .navbar .burger-menu {
+        display: inline-block;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .navlink {
+        display: block;
+    }    
+
     main {
         flex-direction: column;
     }
