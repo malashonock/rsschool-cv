@@ -34,8 +34,6 @@ body {
 }
 
 .navbar a {
-    cursor: pointer;
-    text-decoration: none;
     color: white;
 }
 
@@ -129,6 +127,15 @@ p {
     margin-bottom: 0.35rem;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+hr {
+    width: 100%;
+}
+
 ul {
     list-style-type: none;
     padding-left: 1rem;
@@ -153,6 +160,32 @@ td.first-col {
 #contacts {
     display: flex;
     flex-direction: column;
+}
+
+#projects ul {
+    padding-left: 0;
+}
+
+#projects li:before {
+    display: none;
+}
+
+#projects a {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#projects a:hover {
+    color: var(--highlight-color);
+}
+
+#projects img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.7rem;
 }
 
 footer {
