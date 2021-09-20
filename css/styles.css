@@ -2,6 +2,7 @@
     --highlight-color: #17a7a7;
     --text-color: #363838;
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1080 - 320)));
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,7 +27,43 @@ body {
     background-color: white;
 }
 
+.navbar {
+    background-color: var(--highlight-color);
+    width: 100%;
+    position: fixed;
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+}
+
+.navlink {
+    width: 100%;
+    text-align: center; 
+}
+
+.navlink:hover,
+.navlink:hover > a {
+    background-color: white;
+    color: var(--highlight-color);
+}
+
+.navlink > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.navlink:before {
+    display: none;
+}
+
 main {
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: row;
 }
