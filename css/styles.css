@@ -3,6 +3,7 @@
     --text-color: #363838;
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1080 - 320)));
     scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
 }
 
 body {
