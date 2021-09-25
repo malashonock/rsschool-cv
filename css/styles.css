@@ -28,6 +28,11 @@ body {
     background-color: white;
 }
 
+header {
+    width: 100%;
+    max-width: inherit;
+}
+
 .navbar {
     background-color: var(--highlight-color);
     width: 100%;
@@ -188,7 +193,7 @@ td.first-col {
     display: none;
 }
 
-#projects a {
+.project a {
     color: var(--text-color);
     display: flex;
     flex-direction: row;
@@ -196,14 +201,19 @@ td.first-col {
     align-items: center;
 }
 
-#projects a:hover {
+.project a:hover {
     color: var(--highlight-color);
 }
 
-#projects img {
+.project img {
     width: 5rem;
     height: 5rem;
     margin: 0.7rem;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {

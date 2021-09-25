@@ -15,24 +15,26 @@
     <script src="lib/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
-    <script src="js/index.js"></script>
+    
 </head>
 <body>
     <div class="container">
-        <header class="navbar">
-            <a href="javascript:void(0);" class="burger-menu icon">
-                <span class="fa fa-bars"></span>
-            </a>
-
-            <ul class="navlinks">
-                <li class="navlink"><a href="#contacts">Contacts</a></li>
-                <li class="navlink"><a href="#intro">Intro</a></li>
-                <li class="navlink"><a href="#experience">Experience</a></li>
-                <li class="navlink"><a href="#education">Education</a></li>
-                <li class="navlink"><a href="#skills">Skills</a></li>
-                <li class="navlink"><a href="#code-samples">Code</a></li>
-                <li class="navlink"><a href="#projects">Projects</a></li>
-            </ul>
+        <header>
+            <nav class="navbar">
+                <a href="javascript:void(0);" class="burger-menu icon">
+                    <span class="fa fa-bars"></span>
+                </a>
+    
+                <ul class="navlinks">
+                    <li class="navlink"><a href="#contacts">Contacts</a></li>
+                    <li class="navlink"><a href="#intro">Intro</a></li>
+                    <li class="navlink"><a href="#experience">Experience</a></li>
+                    <li class="navlink"><a href="#education">Education</a></li>
+                    <li class="navlink"><a href="#skills">Skills</a></li>
+                    <li class="navlink"><a href="#code-samples">Code</a></li>
+                    <li class="navlink"><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>            
         </header>
 
         <main>
@@ -93,7 +95,7 @@
                 <hr>
 
                 <section id="experience">
-                    <h2 class="highlight">Work experience:</h2>
+                    <h2 class="highlight">Work experience</h2>
                     <table>
                         <tbody>
                             <tr>
@@ -122,7 +124,7 @@
                 <hr>
                 
                 <section id="education">
-                    <h2 class="highlight">Education:</h2>
+                    <h2 class="highlight">Education</h2>
                     <table>
                         <tbody>
                             <tr>
@@ -152,7 +154,7 @@
                 <hr>
             
                 <section id="skills">
-                    <h2 class="highlight">Professional skills:</h2>
+                    <h2 class="highlight">Professional skills</h2>
                     <ul>
                         <li>IFRS, management accounting, financial modelling</li>
                         <li>MS Excel, VBA, Power Query (M), Power Pivot (DAX)</li>
@@ -166,7 +168,7 @@
                 <hr>
 
                 <section id="code-samples">
-                    <h2 class="highlight">Code samples:</h2>
+                    <h2 class="highlight">Code samples</h2>
                     <p>My solution to 
                         <i><a href="https://www.codewars.com/kata/517abf86da9663f1d2000003" target="_blank" rel="noopener noreferrer">
                             &laquo;Convert string to camel case&raquo;
@@ -190,12 +192,12 @@
                 <hr>
 
                 <section id="projects">
-                    <h2 class="highlight">Projects:</h2>
+                    <h2 class="highlight">Projects</h2>
                     <ul>
-                        <li>
+                        <li class="project">
                             <a href="https://github.com/malashonock/expression-calculator" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/calculator.png" alt="calculator">
-                                <div>
+                                <div class="project-info">
                                     <h3>Expression calculator</h3>
                                     <p>
                                         Evaluate arbitrary expressions using JS
@@ -205,10 +207,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="project">
                             <a href="https://github.com/malashonock/sudoku" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/sudoku.png" alt="sudoku">
-                                <div>
+                                <div class="project-info">
                                     <h3>Sudoku</h3>
                                     <p>
                                         Sudoku solver at various difficulty levels
@@ -240,5 +242,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
