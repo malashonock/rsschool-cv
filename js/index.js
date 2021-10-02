@@ -1,43 +1,53 @@
-window.addEventListener('load', () => {
-    const links = [...document.querySelectorAll('.navbar a')];
-    const mediaQueryDesktop = window.matchMedia('(min-width: 48.001rem)');
+const links = [...document.querySelectorAll('.navbar a')];
+const mediaQueryDesktop = window.matchMedia('(min-width: 48.001rem)');
+const burgerMenu = document.querySelector('.burger-menu');
+const burgerMenuIcon = burgerMenu.querySelector('span');
+const navMenu = document.querySelector('.navlinks');
 
-    links.forEach((link) => {
-        console.log(link);
-        link.addEventListener('click', () => toggleNavMenu());
-    });
+links.forEach((link) => {
+    console.log(link);
+    link.addEventListener('click', () => toggleNavMenu());
+});
 
-    mediaQueryDesktop.addEventListener('change', (mediaQuery) => {
-        if (mediaQuery.matches) {
-            restoreDesktopNavmenu();
-        } else {
-            hideNavmenu();
-        }
-    });
+mediaQueryDesktop.addEventListener('change', (mediaQuery) => {
+    if (mediaQuery.matches) {
+        restoreDesktopNavmenu();
+    } else {
+        hideNavmenu();
+    }
 });
 
 const toggleNavMenu = () => {
-    const burgerMenu = document.querySelector('.burger-menu');
-
     if (getComputedStyle(burgerMenu).getPropertyValue('display') === 'none') {
         return;
     }
 
-    const navMenu = document.querySelector('.navlinks');
     if (getComputedStyle(navMenu).getPropertyValue('display') === 'block') {
         navMenu.style.display = 'none';
+        setBurgerMenuIcon('burger');
     } else {
         navMenu.style.display = 'block';
+        setBurgerMenuIcon('close');
     }
 };
 
 const restoreDesktopNavmenu = () => {
-    const navMenu = document.querySelector('.navlinks');
     navMenu.style.display = 'flex';    
+    setBurgerMenuIcon('close');
 };
 
 const hideNavmenu = () => {
-    const navMenu = document.querySelector('.navlinks');
     navMenu.style.display = 'none';    
+    setBurgerMenuIcon('burger');
 };
 
+const setBurgerMenuIcon = (iconType) => {
+    switch (iconType) {
+        case 'burger':
+            burgerMenuIcon.className = 'fa fa-bars';
+            break;
+        case 'close':
+            burgerMenuIcon.className = 'fa fa-times';
+            break;
+    }
+};
