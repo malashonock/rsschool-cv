@@ -2,6 +2,7 @@ const links = [...document.querySelectorAll(".navbar a")];
 const mediaQueryDesktop = window.matchMedia("(min-width: 48.001rem)");
 const burgerMenu = document.querySelector(".burger-menu");
 const burgerMenuIcon = burgerMenu.querySelector("span");
+const navBar = document.querySelector(".navbar");
 const navMenu = document.querySelector(".navlinks");
 
 links.forEach((link) => {
@@ -51,3 +52,9 @@ const setBurgerMenuIcon = (iconType) => {
       break;
   }
 };
+
+document.addEventListener("click", (event) => {
+  if (!navBar.contains(event.target)) {
+    hideNavmenu();
+  }
+});
