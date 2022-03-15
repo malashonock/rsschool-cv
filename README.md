@@ -1,2 +1,2 @@
-https://malashonock.github.io/rsschool-cv
+https://malashonock.github.io/rsschool-cv/cv
 
