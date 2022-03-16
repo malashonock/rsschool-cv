@@ -44,23 +44,56 @@
       </header>
 
       <main>
-        <aside class="aside">
-          <div id="title">
-            <div class="photo-container">
+        <aside class="aside large-width">
+          <div class="photo-container">
+            <img
+              class="photo"
+              src="assets/yan-malashonak-square-min.jpg"
+              alt="yan-malashonak-photo"
+            />
+          </div>
+
+          <section class="contacts">
+            <h2 class="highlight">Contacts</h2>
+
+            <ul>
+              <li>
+                <h3>Location:</h3>
+                <p>Belarus, Minsk</p>
+              </li>
+              <li>
+                <h3>Email:</h3>
+                <p>malashonock@gmail.com</p>
+              </li>
+              <li>
+                <h3>Phone:</h3>
+                <p>+375 (29) 826-16-20</p>
+              </li>
+              <li>
+                <h3>Skype:</h3>
+                <p>yan.malashonak</p>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <div class="content">
+          <section class="title">
+            <div class="photo-container small-width">
               <img
-                id="photo"
+                class="photo"
                 src="assets/yan-malashonak-square-min.jpg"
                 alt="yan-malashonak-photo"
               />
             </div>
 
-            <section class="credentials small-width">
+            <div class="name">
               <h1>Yan Malashonak</h1>
               <p><strong>Junior Frontend Developer</strong></p>
-            </section>
-          </div>
+            </div>
+          </section>
 
-          <section id="contacts">
+          <section class="contacts small-width">
             <h2 class="highlight">Contacts</h2>
 
             <ul>
@@ -84,13 +117,6 @@
           </section>
 
           <hr class="small-width" />
-        </aside>
-
-        <div class="content">
-          <section class="credentials large-width">
-            <h1>Yan Malashonak</h1>
-            <p><strong>Junior Frontend Developer</strong></p>
-          </section>
 
           <section id="intro">
             <h2 class="highlight">Self-intro</h2>
@@ -199,7 +225,7 @@
           <section id="skills">
             <h2 class="highlight">Professional skills</h2>
             <ul>
-              <li>HTML, CSS, JavaScript</li>
+              <li>HTML5, CSS3, JavaScript</li>
               <li>SCSS, Webpack, VS Code, Git, Figma</li>
               <li>MS Excel, VBA, Power Query (M), Power Pivot (DAX)</li>
               <li>C#, .NET Framework, WinForms (basic knowledge)</li>
@@ -251,16 +277,20 @@
             <h2 class="highlight">Projects</h2>
             <ul>
               <li class="project">
-                <a href="https://malashonock.github.io/museum-adaptive/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/museum.jpg" alt="museum" />
-                    <div class="project-info">
-                        <h3>Museum</h3>
-                        <p>
-                            Landing page of Louvre museum
-                            <br />
-                            <small>HTML, (S)CSS, adaptive, JavaScript, Webpack</small>
-                        </p>
-                    </div>
+                <a
+                  href="https://malashonock.github.io/museum-adaptive/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/museum.jpg" alt="museum" />
+                  <div class="project-info">
+                    <h3>Museum</h3>
+                    <p>
+                      Landing page of Louvre museum
+                      <br />
+                      <small>HTML, (S)CSS, adaptive, JavaScript, Webpack</small>
+                    </p>
+                  </div>
                 </a>
               </li>
               <li class="project">
@@ -326,7 +356,7 @@
         </div>
       </footer>
     </div>
-    
+
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -88,14 +88,14 @@ main {
   flex-direction: row;
 }
 
-aside {
+.aside {
   flex: 0 1 7.5rem;
-  padding: 0.7rem;
+  padding: 0 0.7rem;
   display: flex;
   flex-direction: column;
 }
 
-#title {
+.title {
   display: flex;
   flex-direction: column;
 }
@@ -113,16 +113,13 @@ aside {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  padding: 0.7rem 0;
 }
 
-#photo {
+.photo {
   margin: 0 0.35rem;
   border-radius: 50%;
   border: 3px solid white;
-}
-
-.small-width {
-  display: none;
 }
 
 h1 {
@@ -173,7 +170,7 @@ td.first-col {
   min-width: 8rem;
 }
 
-#contacts {
+.contacts {
   display: flex;
   flex-direction: column;
 }
@@ -232,6 +229,10 @@ footer {
   align-items: center;
 }
 
+.small-width {
+  display: none;
+}
+
 @media (max-width: 48rem) {
   .navbar .burger-menu {
     display: inline-block;
@@ -249,51 +250,48 @@ footer {
     flex-direction: column;
   }
 
-  aside {
-    padding-bottom: 0;
-  }
-
   .content {
     padding-top: 0;
   }
 
-  #title {
+  .title {
     flex-direction: row;
+    justify-content: flex-start;
   }
 
+  .photo-container.small-width,
+  .contacts.small-width,
+  hr.small-width {
+    display: block;
+  }
+
+  .contacts.small-width,
   hr.small-width {
     display: block;
     width: 100%;
   }
 
-  hr.small-width {
-    display: block;
-  }
-
-  .credentials.small-width {
+  .name {
     margin-left: 0.7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .credentials.large-width {
-    display: none;
-  }
-
-  #contacts > ul {
+  .contacts > ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 0;
+    max-height: 4.7rem;
   }
 
-  #contacts > ul > li {
+  .contacts > ul > li {
     flex: 1 1 24rem;
-    min-width: 13.75rem;
+    max-width: 50%;
   }
 
-  #contacts > ul > li:before {
+  .contacts > ul > li:before {
     display: none;
     margin-left: 0;
   }
@@ -306,16 +304,28 @@ footer {
   h3 {
     margin-block-start: 0;
   }
+
+  .large-width {
+    display: none;
+  }
 }
 
-@media (max-width: 23.75rem) {
-  #title {
+@media (max-width: 35rem) {
+  .title {
     flex-direction: column;
     align-items: center;
   }
 
-  #title * {
+  .title * {
     margin-left: 0;
     text-align: center;
+  }
+
+  .contacts > ul {
+    max-height: none;
+  }
+
+  .contacts > ul > li {
+    max-width: 100%;
   }
 }
