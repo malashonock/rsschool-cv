@@ -6,7 +6,6 @@ const navBar = document.querySelector(".navbar");
 const navMenu = document.querySelector(".navlinks");
 
 links.forEach((link) => {
-  console.log(link);
   link.addEventListener("click", () => toggleNavMenu());
 });
 

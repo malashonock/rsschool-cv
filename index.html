@@ -32,7 +32,7 @@
           </a>
 
           <ul class="navlinks">
-            <li class="navlink"><a href="#contacts">Contacts</a></li>
+            <li class="navlink"><a href="#name">Contacts</a></li>
             <li class="navlink"><a href="#intro">Intro</a></li>
             <li class="navlink"><a href="#experience">Experience</a></li>
             <li class="navlink"><a href="#education">Education</a></li>
@@ -44,23 +44,16 @@
       </header>
 
       <main>
-        <aside>
-          <div id="title">
-            <div class="photo-container">
-              <img
-                id="photo"
-                src="assets/yan-malashonak-square-min.jpg"
-                alt="yan-malashonak-photo"
-              />
-            </div>
-
-            <section class="credentials small-width">
-              <h1>Yan Malashonak</h1>
-              <p><strong>Junior Frontend Developer</strong></p>
-            </section>
+        <aside class="aside large-width">
+          <div class="photo-container">
+            <img
+              class="photo"
+              src="assets/yan-malashonak-square-min.jpg"
+              alt="yan-malashonak-photo"
+            />
           </div>
 
-          <section id="contacts">
+          <section class="contacts">
             <h2 class="highlight">Contacts</h2>
 
             <ul>
@@ -70,27 +63,60 @@
               </li>
               <li>
                 <h3>Email:</h3>
-                <p>malashonock@gmail.com</p>
+                <a href="email:malashonock@gmail.com">malashonock@gmail.com</a>
               </li>
               <li>
                 <h3>Phone:</h3>
-                <p>+375 (29) 826-16-20</p>
+                <a href="tel:+375298261620">+375 (29) 826-16-20</a>
               </li>
               <li>
                 <h3>Skype:</h3>
-                <p>yan.malashonak</p>
+                <a href="skype:yan.malashonak?add">yan.malashonak</a>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <div class="content">
+          <section class="title">
+            <div class="photo-container small-width">
+              <img
+                class="photo"
+                src="assets/yan-malashonak-square-min.jpg"
+                alt="yan-malashonak-photo"
+              />
+            </div>
+
+            <div id="name" class="name">
+              <h1>Yan Malashonak</h1>
+              <p><strong>Junior Frontend Developer</strong></p>
+            </div>
+          </section>
+
+          <section class="contacts small-width">
+            <h2 class="highlight">Contacts</h2>
+
+            <ul>
+              <li>
+                <h3>Location:</h3>
+                <p>Belarus, Minsk</p>
+              </li>
+              <li>
+                <h3>Email:</h3>
+                <a href="email:malashonock@gmail.com">malashonock@gmail.com</a>
+              </li>
+              <li>
+                <h3>Phone:</h3>
+                <a href="tel:+375298261620">+375 (29) 826-16-20</a>
+              </li>
+              <li>
+                <h3>Skype:</h3>
+                <a href="skype:yan.malashonak?add">yan.malashonak</a>
               </li>
             </ul>
           </section>
 
           <hr class="small-width" />
-        </aside>
-
-        <article class="content">
-          <section class="credentials large-width">
-            <h1>Yan Malashonak</h1>
-            <p><strong>Junior Frontend Developer</strong></p>
-          </section>
 
           <section id="intro">
             <h2 class="highlight">Self-intro</h2>
@@ -107,7 +133,6 @@
                 height="394"
                 src="https://www.youtube.com/embed/Q_GRIl0QMps"
                 title="YouTube video player"
-                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
@@ -200,7 +225,7 @@
           <section id="skills">
             <h2 class="highlight">Professional skills</h2>
             <ul>
-              <li>HTML, CSS, JavaScript</li>
+              <li>HTML5, CSS3, JavaScript</li>
               <li>SCSS, Webpack, VS Code, Git, Figma</li>
               <li>MS Excel, VBA, Power Query (M), Power Pivot (DAX)</li>
               <li>C#, .NET Framework, WinForms (basic knowledge)</li>
@@ -252,16 +277,20 @@
             <h2 class="highlight">Projects</h2>
             <ul>
               <li class="project">
-                <a href="https://malashonock.github.io/museum-adaptive/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/museum.jpg" alt="museum" />
-                    <div class="project-info">
-                        <h3>Museum</h3>
-                        <p>
-                            Landing page of Louvre museum
-                            <br />
-                            <small>HTML, (S)CSS, adaptive, JavaScript, Webpack</small>
-                        </p>
-                    </div>
+                <a
+                  href="https://malashonock.github.io/museum-adaptive/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/museum.jpg" alt="museum" />
+                  <div class="project-info">
+                    <h3>Museum</h3>
+                    <p>
+                      Landing page of Louvre museum
+                      <br />
+                      <small>HTML, (S)CSS, adaptive, JavaScript, Webpack</small>
+                    </p>
+                  </div>
                 </a>
               </li>
               <li class="project">
@@ -300,7 +329,7 @@
               </li>
             </ul>
           </section>
-        </article>
+        </div>
       </main>
 
       <footer>
@@ -317,7 +346,11 @@
         </div>
 
         <div>
-          <a href="https://rs.school/js/">
+          <a
+            href="https://rs.school/js/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="assets/rs_school_js.svg"
               alt="rsschool-logo"
@@ -327,6 +360,7 @@
         </div>
       </footer>
     </div>
+
     <script src="js/index.js"></script>
   </body>
 </html>
