@@ -246,28 +246,26 @@
               My solution to
               <i
                 ><a
-                  href="https://www.codewars.com/kata/517abf86da9663f1d2000003"
+                  href="https://www.codewars.com/kata/558cb3df5f511f40d500001d"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  &laquo;Convert string to camel case&raquo;
+                  &laquo;Replicate `new`&raquo; (5 kyu)
                 </a></i
               >
               kata on Codewars:
             </p>
-            <pre><code>function toCamelCase(str) {
-    let words = str.split(/[_-]/);
-    let output = "";        
-    for (i = 0; i &lt; words.length; i++) {
-        let word = words[i];
-        if (i == 0) {
-            output += word; // leave 1st word unchanged
-        } else {
-            output += word.charAt(0).toUpperCase()
-                + word.slice(1);
-        }
-    }        
-    return output;
+            <pre><code
+>function nouveau(Ctor, ...args) {
+  const instance = {};
+  Object.setPrototypeOf(instance, Ctor.prototype);
+  const result = Ctor.apply(instance, args);
+
+  if (result && (typeof result === 'object' || typeof result === 'function')) {
+    return result;
+  } else {
+    return instance;
+  }
 }</code></pre>
           </section>
 
