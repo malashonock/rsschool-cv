@@ -192,6 +192,18 @@
             <table>
               <tbody>
                 <tr>
+                  <td class="first-col"><b>2022</b></td>
+                  <td>
+                    RS School 2022Q1 JavaScript/Frontend Stage 1
+                  </td>
+                </tr>
+                <tr>
+                  <td class="first-col"><b>2021</b></td>
+                  <td>
+                    RS School 2021Q3 JavaScript/Frontend Pre-School (Stage 0)
+                  </td>
+                </tr>
+                <tr>
                   <td class="first-col"><b>2021</b></td>
                   <td>
                     Training programme in Management "Business-Spetsnaz" (by
@@ -227,10 +239,10 @@
             <ul>
               <li>HTML5, CSS3, JavaScript</li>
               <li>SCSS, Webpack, VS Code, Git, Figma</li>
-              <li>MS Excel, VBA, Power Query (M), Power Pivot (DAX)</li>
+              <li>TypeScript, Angular, Nest.js (currently studying)</li>
               <li>C#, .NET Framework, WinForms (basic knowledge)</li>
               <li>ASP.NET Core, Blazor (basic knowledge)</li>
-              <li>Angular, TypeScript (currently studying)</li>
+              <li>MS Excel, VBA, Power Query (M), Power Pivot (DAX)</li>
               <li>IFRS, management accounting, financial modelling</li>
               <li>
                 English: C1 (Advanced), tested by EPAM's online training center
@@ -246,28 +258,26 @@
               My solution to
               <i
                 ><a
-                  href="https://www.codewars.com/kata/517abf86da9663f1d2000003"
+                  href="https://www.codewars.com/kata/558cb3df5f511f40d500001d"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  &laquo;Convert string to camel case&raquo;
+                  &laquo;Replicate `new`&raquo; (5 kyu)
                 </a></i
               >
               kata on Codewars:
             </p>
-            <pre><code>function toCamelCase(str) {
-    let words = str.split(/[_-]/);
-    let output = "";        
-    for (i = 0; i &lt; words.length; i++) {
-        let word = words[i];
-        if (i == 0) {
-            output += word; // leave 1st word unchanged
-        } else {
-            output += word.charAt(0).toUpperCase()
-                + word.slice(1);
-        }
-    }        
-    return output;
+            <pre><code
+>function nouveau(Ctor, ...args) {
+  const instance = {};
+  Object.setPrototypeOf(instance, Ctor.prototype);
+  const result = Ctor.apply(instance, args);
+
+  if (result && (typeof result === 'object' || typeof result === 'function')) {
+    return result;
+  } else {
+    return instance;
+  }
 }</code></pre>
           </section>
 
@@ -276,6 +286,19 @@
           <section id="projects">
             <h2 class="highlight">Projects</h2>
             <ul>
+              <li class="project">
+                <a href="https://malashonock.github.io/shelter/shelter/pages/main/main.html" target="_blank" rel="noopener noreferrer">
+                  <img src="assets/pets-woody.png" alt="pets-woody" />
+                  <div class="project-info">
+                    <h3>Shelter</h3>
+                    <p>
+                      Landing page of a pet shelter Cozy House
+                      <br />
+                      <small>HTML, (S)CSS, adaptive, JavaScript, ES6 modules</small>
+                    </p>
+                  </div>
+                </a>
+              </li>
               <li class="project">
                 <a
                   href="https://malashonock.github.io/museum-adaptive/"
